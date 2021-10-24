@@ -22,7 +22,7 @@ namespace SendMailApp
                 smtp.Port = 587;
                 smtp.Host = "smtp.live.com"; //for gmail host 
                 smtp.Credentials = new System.Net.NetworkCredential("testdenemehesap001@hotmail.com", "02125585aA.");
-                message.From = new MailAddress("zafrkaya28@hotmail.com.tr");
+                message.From = new MailAddress("testdenemehesap001@hotmail.com");
                 message.To.Add(new MailAddress(mailTo));
                 message.Subject = subject;
                 message.IsBodyHtml = true; //to make message body as html  
