@@ -21,7 +21,7 @@ namespace SendMailApp
                 smtp.UseDefaultCredentials = false;
                 smtp.Port = 587;
                 smtp.Host = "smtp.live.com"; //for gmail host 
-                smtp.Credentials = new System.Net.NetworkCredential("your@mailadress.com", "mailpassword");
+                smtp.Credentials = new System.Net.NetworkCredential("your@mailadress.com", "yourmailpassword");
                 message.From = new MailAddress("zafrkaya28@hotmail.com.tr");
                 message.To.Add(new MailAddress(mailTo));
                 message.Subject = subject;
