@@ -43,6 +43,7 @@ namespace SendMailApp
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -113,6 +114,7 @@ namespace SendMailApp
             // btnMailSend
             // 
             this.btnMailSend.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnMailSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMailSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnMailSend.Image = ((System.Drawing.Image)(resources.GetObject("btnMailSend.Image")));
             this.btnMailSend.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
