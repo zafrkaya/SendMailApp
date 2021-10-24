@@ -19,8 +19,20 @@ namespace SendMailApp
 
         private void btnMailSend_Click(object sender, EventArgs e)
         {
-            Mailing mailing = new Mailing();
-            mailing.SendMail(txtMailBody.Text, txtMailTo.Text, txtSubject.Text);
+            try
+            {
+                Mailing mailing = new Mailing();
+                DbHelper dbhelper = new DbHelper();
+                mailing.SendMail(txtMailBody.Text, txtMailTo.Text, txtSubject.Text);
+                dbhelper.MailDbAdd(Mailing.mailFrom, txtMailTo.Text, txtSubject.Text, txtMailBody.Text);
+                MessageBox.Show("Email sent successfully!");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Logging.LoggingText(error);
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
