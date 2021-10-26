@@ -38,6 +38,7 @@ namespace SendMailApp
             this.txtMailTo = new System.Windows.Forms.TextBox();
             this.txtMailBody = new System.Windows.Forms.RichTextBox();
             this.btnMailSend = new System.Windows.Forms.Button();
+            this.btnAdminPanel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -127,12 +128,29 @@ namespace SendMailApp
             this.btnMailSend.UseVisualStyleBackColor = false;
             this.btnMailSend.Click += new System.EventHandler(this.btnMailSend_Click);
             // 
+            // btnAdminPanel
+            // 
+            this.btnAdminPanel.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnAdminPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdminPanel.Image = ((System.Drawing.Image)(resources.GetObject("btnAdminPanel.Image")));
+            this.btnAdminPanel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdminPanel.Location = new System.Drawing.Point(25, 271);
+            this.btnAdminPanel.Name = "btnAdminPanel";
+            this.btnAdminPanel.Size = new System.Drawing.Size(90, 43);
+            this.btnAdminPanel.TabIndex = 16;
+            this.btnAdminPanel.Text = "ADMIN";
+            this.btnAdminPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdminPanel.UseVisualStyleBackColor = false;
+            this.btnAdminPanel.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(347, 337);
+            this.Controls.Add(this.btnAdminPanel);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSubject);
@@ -160,6 +178,7 @@ namespace SendMailApp
         private System.Windows.Forms.TextBox txtMailTo;
         private System.Windows.Forms.RichTextBox txtMailBody;
         private System.Windows.Forms.Button btnMailSend;
+        private System.Windows.Forms.Button btnAdminPanel;
     }
 }
 

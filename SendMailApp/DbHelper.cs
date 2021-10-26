@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace SendMailApp
     {
         SqlConnection con = new SqlConnection(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=SendMail;Integrated Security=True");
 
+
+        //Her mail gönderildiğinde db'ye kayıt alınıyor.
         public void MailDbAdd(string mailFrom, string mailTo, string mailSubject, string mailBody)
         {
             con.Open();
@@ -23,5 +26,7 @@ namespace SendMailApp
             command.ExecuteNonQuery();
             con.Close();
         }
+
+
     }
 }

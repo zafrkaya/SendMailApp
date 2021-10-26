@@ -9,6 +9,7 @@ namespace SendMailApp
 {
     public class Logging
     {
+        //Text file logging
         public static void LoggingText(Exception ex)
         {
             File.AppendAllText("log.txt", Environment.UserName + " " + Environment.MachineName);

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,6 +39,19 @@ namespace SendMailApp
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+
+
+        private void btnAdminPanel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frmEmails admin = new frmEmails();
+            admin.ShowDialog();
         }
     }
 }
